@@ -1,0 +1,32 @@
+PROCEDURE isPalindrome(word:STRING , left , right : INTEGER)
+BEGIN
+    //stop condition : an empty word or containg a single charactre
+    IF (word.length = 0 || left = right) THEN
+        write("it's palindrome")
+        // compare
+    ELES IF (word[left] = word[right]) THEN
+        isPalindrome(word , left+1 , right-1)
+    ELES
+    //id differnce stop
+    write("it's not palindrome!")
+    END_IF
+    END_IF
+END
+
+
+
+FUNCTION isPalindrome(word , left , right){
+    if(word.length == 0 || left == right){
+        console.log("it's palindrome")
+        return true
+    }
+    eles {
+        if(word[left] == word[right]){
+            isPalindrome(word,left+1 , right-1)
+        }eles{
+            console.logo("it's not palindrome")
+            return fals
+        }
+    }
+
+}
